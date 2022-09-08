@@ -18,14 +18,14 @@ print(a[-1])
 
 
 #Metodos
-print(a.lower())
+print(a.lower()) #minuscula
 
-print(a.upper())
+print(a.upper()) #mayuscula
 
-print(a.split())
+print(a.split()) # sepera por poalabras
 
 #List
-lista_1=['hola',1,2.5,True,[1,2,3,4,],(a,b),]
+lista_1=['hola',1,2.5,True,[1,2,3,4,],(a,b)]
 print(lista_1)
 print(type(lista_1))
 print(len(lista_1))
