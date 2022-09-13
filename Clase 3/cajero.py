@@ -1,7 +1,7 @@
 menu=input()
-
+dinero=int
 while menu !='4':
-    print('-----------------------\n Bienvenidosal cajero \n-----------------------')
+    print('-----------------------\n Bienvenidos al cajero \n-----------------------')
 
     print('1 Depositos ')
 
@@ -16,6 +16,7 @@ while menu !='4':
 
     if menu =='1':
         input('ingrese monto a depositar:')
+        
     elif menu =='2':    
         input('ingrese monto a extraer:')
         
