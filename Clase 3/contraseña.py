@@ -10,14 +10,14 @@ def run():
         if any(chr.isdigit() for chr in contrasena):
             if any(chr.islower() for chr in contrasena ):
               if any(chr.isupper() for chr in contrasena):
-                print("tas pillo")
+                print("Contraseña valida")
               else:
-                err("Letras malas AAA")
+                err("Debe incluir al menos una mayuscula")
             else:
-              err("Letras malas aaa")
+              err("Debe incluir al menos una minuscula")
         else:
             err("Faltan numeros")
     else:
-        err("Contraseña corta")
+        err("Contraseña demasiado corta")
 
 run()
