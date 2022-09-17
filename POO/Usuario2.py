@@ -20,9 +20,25 @@ class Usuario :
     def apellido(self):
         return self.__apellido
     
-    @nombre.setter
+    @apellido.setter
     def apellido(self,apellido):
         self.__apellido = apellido
+        
+    @property
+    def email(self):
+        return self.__email
+    
+    @email.setter
+    def email(self,valor):
+        self.__email = valor
+        
+    @property
+    def contraseña(self):
+        return self.__contraseña
+    
+    @contraseña.setter
+    def contraseña(self,valor):
+        self.__contraseña = valor
         
     def __str__ (self):
         return 'Nombre: '+ str(self.__nombre)+ ', Apellido : '+ str(self.__apellido)+', Email: '+ str(self.__email) +', Contraseña: '+ str(self.__contraseña)
@@ -30,14 +46,20 @@ class Usuario :
  
 usuario1 = Usuario('fran','alcoba','fran@fran','contraseña')
 
-print(usuario1) 
-usuario1.nombre=('juan')
-usuario1.apellido=('juan')
-print(usuario1) 
-print(usuario1.nombre)
-print(usuario1.apellido)
-print(usuario1.__email)
+print('BIENVENIDO A LA  MATRIX \n')
+print('Si toma la pildora roja podra ingresar ,si elije la azul su vida seguira normalmente')
+
+menu=input('cual desea tomar ?: ')
 
     
+while menu!='roja' and menu!='azul':
+    print('debe tomar una decision')
+    menu=input('cual desea tomar ?: ')
 
+if menu =='roja':
+    print('debe registrarse en la matrix como user')
+    
+              
+elif menu=='azul':    
+    print('continua con su vida normal')
 
