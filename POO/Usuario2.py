@@ -44,7 +44,7 @@ class Usuario :
         return 'Nombre: '+ str(self.__nombre)+ ', Apellido : '+ str(self.__apellido)+', Email: '+ str(self.__email) +', Contraseña: '+ str(self.__contraseña)
     
  
-usuario1 = Usuario('fran','alcoba','fran@fran','contraseña')
+usuario1 = Usuario('','','','')
 
 print('BIENVENIDO A LA  MATRIX \n')
 print('Si toma la pildora roja podra ingresar ,si elije la azul su vida seguira normalmente')
@@ -62,4 +62,18 @@ if menu =='roja':
               
 elif menu=='azul':    
     print('continua con su vida normal')
+print(usuario1)
 
+usuario1.nombre=input('Ingrese su nombre: ')
+print(usuario1.nombre)
+
+usuario1.apellido=input('Ingrese su apellido: ')
+print(usuario1.apellido)
+
+usuario1.email=input('Ingrese su email: ')
+print(usuario1.email)
+
+usuario1.contraseña=input('Ingrese su contraseña: ')
+print(usuario1.contraseña)
+
+print(usuario1)
