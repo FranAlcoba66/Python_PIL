@@ -2,8 +2,6 @@ from curses.ascii import isdigit
 import re
 from xml.etree.ElementTree import tostring
 
-
-
 class Usuario :
     def __init__(self,nombre,apellido,email,contraseña):
         self.__nombre=nombre
@@ -117,13 +115,13 @@ if menu =='roja':
     arg_email=usuario1.email
     validate_email(arg_email)
 
-
     verificarContraseña()
 
 
     print('Usuario generado correctamente :',usuario1)
 
 elif menu=='azul':
+    print('Continua con su vida normal')
     print('´´´´´´´´´´´´´´´´¶¶¶¶¶¶¶¶¶¶¶¶¶¶')
     print('´´´´´´´´´´´´´´¶¶´´´´´´´´´´´´´´´´¶¶')
     print('´¶¶¶¶¶´´´´´´´¶¶´´´´´´´´´´´´´´´´´´´¶¶')
@@ -141,5 +139,3 @@ elif menu=='azul':
     print('¶¶´´´´´´´´¶¶´´´´´´´´´´´´´´´´´´´´´´´¶¶')
     print('´¶¶¶¶¶¶¶¶¶¶¶¶¶¶´´´´´´´´´´´´´´´´´¶¶')
     print('´´´´´´´´´´´´´´´¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶)')
-
-
