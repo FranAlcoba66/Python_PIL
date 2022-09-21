@@ -4,7 +4,6 @@ from xml.etree.ElementTree import tostring
 
 
 
-
 class Usuario :
     def __init__(self,nombre,apellido,email,contraseña):
         self.__nombre=nombre
@@ -46,6 +45,7 @@ class Usuario :
 
     def __str__ (self):
         return 'Nombre: '+ str(self.__nombre)+ ', Apellido : '+ str(self.__apellido)+', Email: '+ str(self.__email) +', Contraseña: '+ str(self.__contraseña)
+
 def verificarNombre():
         largo=False
         while largo==False :
@@ -54,6 +54,7 @@ def verificarNombre():
                 largo=True
             else:
                 print('Su nombre debe tener entre 6 y 12 caracteres ')
+
 def verificarApellido():
         largo=False
         while largo==False :
@@ -64,7 +65,6 @@ def verificarApellido():
                 print('Su apellido debe tener entre 6 y 12 caracteres ')
 
 def verificarContraseña():
-
         largo=False
         numeros=False
         mayus=False
@@ -109,21 +109,37 @@ while menu!='roja' and menu!='azul':
 if menu =='roja':
     print('debe registrarse en la matrix como user')
 
+    verificarNombre()
+
+    verificarApellido()
+
+    usuario1.email=input('Ingrese su email: ')
+    arg_email=usuario1.email
+    validate_email(arg_email)
+
+
+    verificarContraseña()
+
+
+    print('Usuario generado correctamente :',usuario1)
+
 elif menu=='azul':
-    print('continua con su vida normal')
+    print('´´´´´´´´´´´´´´´´¶¶¶¶¶¶¶¶¶¶¶¶¶¶')
+    print('´´´´´´´´´´´´´´¶¶´´´´´´´´´´´´´´´´¶¶')
+    print('´¶¶¶¶¶´´´´´´´¶¶´´´´´´´´´´´´´´´´´´´¶¶')
+    print('¶´´´´´¶´´´´¶¶´´´´´´¶¶´´´´¶¶´´´´´´´´´´¶¶')
+    print('¶´´´´´¶´´´¶¶´´´´´´´¶¶´´´´¶¶´´´´´´´´´´´´¶¶')
+    print('¶´´´´¶´´¶¶´´´´´´´´´¶¶´´´´¶¶´´´´´´´´´´´´´¶¶')
+    print('¶´´´¶´´´¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶')
+    print('¶¶¶¶¶¶¶¶¶¶¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶')
+    print('¶´´´´´´´´´´¶´´´¶¶´´´´´´´´´´´´´´¶¶´´´´´´´´¶¶')
+    print('¶¶´´´´´´´´´¶´´´´¶¶´´´´´´´´´´´´¶¶´´´´´´´´´¶¶')
+    print('¶¶´´´´¶¶¶¶¶¶´´´´´¶¶´´´´´´´´´´¶¶´´´´´´´´´¶¶')
+    print('¶´´´´´´´´´¶¶´´´´´´¶¶¶¶¶¶¶¶¶¶¶´´´´´´´´´´¶¶')
+    print('¶¶´´´´´´´´¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶')
+    print('¶¶´´´¶¶¶¶¶¶¶´´´´´´´´´´´´´´´´´´´´´´´´¶¶')
+    print('¶¶´´´´´´´´¶¶´´´´´´´´´´´´´´´´´´´´´´´¶¶')
+    print('´¶¶¶¶¶¶¶¶¶¶¶¶¶¶´´´´´´´´´´´´´´´´´¶¶')
+    print('´´´´´´´´´´´´´´´¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶)')
 
-
-verificarNombre()
-
-verificarApellido()
-
-usuario1.email=input('Ingrese su email: ')
-arg_email=usuario1.email
-validate_email(arg_email)
-
-
-verificarContraseña()
-
-
-print('Usuario generado correctamente :',usuario1)
 
