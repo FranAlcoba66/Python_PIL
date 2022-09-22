@@ -129,10 +129,9 @@ if menu =='roja':
     verificarContraseña()
 
 
-    print('Usuario generado correctamente :',usuario1)
+    print('Usuario generado correctamente :',usuario1.nombre)
 
-    print('Para entrar a la matrix debe logearse')
-
+ 
 
 
 elif menu=='azul':
