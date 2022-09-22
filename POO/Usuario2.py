@@ -87,10 +87,20 @@ def verificarContraseña():
             else:
                 print('Su contraseña debe tener al menos 6 caracteres')
 
-def validate_email(arg_email):
-        EMAIL_REGEX = re.compile(r"^[A-Za-z0-9\.\+_-]+@[A-Za-z0-9\._-]+\.[a-zA-Z]*$")
-        is_valid = False if not EMAIL_REGEX.match(arg_email) else True
-        print("Direccion de correo valida" if is_valid else "Direccion de correo invalida.")
+regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Z|a-z]{2,}\b'
+
+
+def check(a):
+
+    # pass the regular expression
+    # and the string into the fullmatch() method
+    if(re.fullmatch(regex, a)):
+        print("Valid Email")
+        # next()
+    else:
+        print("Invalid Email")
+        value2 =  input("Mal ingresado ,Reingresar mail: ")
+        check(value2)
 
 usuario1 = Usuario('','','','')
 
@@ -111,14 +121,19 @@ if menu =='roja':
 
     verificarApellido()
 
-    usuario1.email=input('Ingrese su email: ')
-    arg_email=usuario1.email
-    validate_email(arg_email)
+    a=input('Ingrese email: ')
+    usuario1.email=a
+    check(a)
+
 
     verificarContraseña()
 
 
     print('Usuario generado correctamente :',usuario1)
+
+    print('Para entrar a la matrix debe logearse')
+
+
 
 elif menu=='azul':
     print('Continua con su vida normal')
