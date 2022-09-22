@@ -1,12 +1,10 @@
 def err(e):
     print("Error: " + e + " !")
 
-def run():
+contrasena = str(input("Ingresa una contraseña: "))
 
-      contrasena = str(input("Ingresa una contraseña: "))
+def run(contrasena):
 
-    # print(any(chr.islower() for chr in contrasena))#
-    # numeros = False
 
       if len(contrasena) >= 6:
 
